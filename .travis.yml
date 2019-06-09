@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t liran/docker-react -f Dockerfile.dev .
 script: 
-  - docker run liran/docker-react npm run test -- --coverage
+  - docker run liran/docker-react npm test
